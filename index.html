@@ -20,64 +20,140 @@
     <!-- TODO: MODULE_LAYOUT -->
     <!-- 1. Use appropriate css classes on nav element. -->
     <!-- 2. Add child elements as required. -->
-    <nav class="navbar navbar-expand-md  bg-light navbar-light">
+    <nav class="navbar navbar-expand-md bg-light navbar-light">
       <a class="navbar-brand" href="#">QTrip</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavbar"
+        aria-controls="collapsibleNavbar"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar" >
-        <ul class="navbar-nav ">
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="collapsibleNavbar"
+      >
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="pages/adventures/index.html">Explore</a>
-          </li>  
+          </li>
         </ul>
-      </div>  
+      </div>
     </nav>
     <!-- TODO: MODULE_LAYOUT -->
     <!-- 1. Use appropriate css classes on the hero image container element. -->
     <!-- 2. Add child elements as required. -->
 
     <div class="hero-image d-flex justify-content-center">
-      <div class="hero-text" style="text-align: center;width:100%;" >
-        <h1 >Welcome to QTrip</h1>
-        <p class="hero-subheading">Explore the world with funtastic places to venture around</p>
-        <input class="hero-input" type="text" placeholder="Search a City">
+      <div class="hero-text" style="text-align: center; width: 100%">
+        <h1>Welcome to QTrip</h1>
+        <p class="hero-subheading">
+          Explore the world with funtastic places to venture around
+        </p>
+        <input class="hero-input" type="text" placeholder="Search a City" />
       </div>
     </div>
 
     <div class="container">
       <!-- TODO: MODULE_LAYOUT -->
-      <!-- 1. Create the grid like layout as required. -->
-      <div class="row">
-        <div class="col-lg-3 col-sm-6 pt-3">
-          <a href="/pages/adventures/index.html">Bengaluru</a>
+      <!-- 1. Create the grid like layout as required. -->   
+        <div class="row">
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <div class="tile">
+              <a href="/pages/adventures/index.html">
+                <img src="/assets/bengaluru.jpg" alt="Banglore">  
+              </a>
+              <div class="tile-text">
+                <h4>banglore</h4>
+                <h6>100+ Places</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-4">
+              <div class="tile">
+                <a href="/pages/adventures/index.html">
+                  <img src="/assets/kolkata.jpg" alt="Kolkata">
+                </a>
+                <div class="tile-text">
+                  <h4>kolkata</h4>
+                <h6>52+ Places</h6>
+               </div>
+              </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-4">
+              <div class="tile">
+                <a href="/assets/adventures/index.html">
+                  <img src="/assets/goa.jpg" >
+                </a>
+                <div class="tile-text">
+                  <h4>goa</h4>
+                  <h6>160+ places</h6>
+                </div>
+              </div>
+            </div>
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <div class="tile">
+              <a href="/assets/adventures/index.html">
+                <img src="/assets/mumbai.jpg " >
+                </a>
+              <div class="tile-text">
+                <h4>mumbai</h4>
+                <h6>121+ places</h6>
+              </div>
+              </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <div class="tile">
+              <a href="/assets/adventures/index.html">
+              <img src="/assets/singapore.jpg">
+            </a>
+            <div class="tile-text">
+              <h4>singapore</h4>
+              <h6>89+ places</h6>
+            </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <div class="tile">
+              <a href="/assets/adventures/index.html">
+                <img src="/assets/dubai.jpg">
+              </a>
+              <div class="tile-text">
+                <h4>dubai</h4>
+                <h6>74+ places</h6>
+              </div>
+              </div>
+            </div>
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <div class="tile" >
+              <a href="/assets/adventures/index.html">
+                <img src="/assets/malaysia.jpg"  > 
+              </a>
+              <div class="tile-text">
+                <h4>malaysia</h4>
+                <h6>172+ places</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <div class="tile">
+              <a href="/assets/adventures/index.html">
+                <img src="/assets/paris.jpg">
+              </a>
+              <div class="tile-text">
+                <h4>paris</h4>
+                <h6>150+ places</h6>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-3 col-sm-6 py-3">
-          <a href="#">Kolkata</a>
-        </div>
-        <div class="col-lg-3 col-sm-6 pt-3">
-          <a href="#">Goa</a>
-        </div>
-        <div class="col-lg-3 col-sm-6 pt-3">
-          <a href="#">Mumbai</a>
-        </div>
-        <div class="col-lg-3 col-sm-6 pt-3">
-          <a href="#">Singapore</a> 
-        </div>
-        <div class="col-lg-3 col-sm-6 py-3">
-          <a href="#">Dubai</a> 
-        </div>
-        <div class="col-lg-3 col-sm-6 py-3">
-          <a href="#">Malaysia</a>
-        </div>
-        <div class="col-lg-3 col-sm-6 py-3">
-          <a href="#">Paris</a>
-        </div>
-      </div>
-    </div>
 
     <footer>
       <div class="container">© QTrip 2020</div>

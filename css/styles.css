@@ -48,17 +48,38 @@ footer {
 /* Layout page CSS */
 /* ================================== */
 
+
 .tile {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  margin: 0.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  border-radius: 7%;
+  color:white;
+  height:100%;
+  
+ 
 }
 .tile img {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  max-width :100%;
+  max-height:100%;
+  object-fit:cover;
+  border-radius: 4%;
+  transition: all .1s ease;
+
 }
 .tile img:hover {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  filter: brightness(0.5);
+  transform: scale(1.05);
+  
 }
 
 /* Hint: Notice the position:absolute and z-index properties. */
@@ -68,11 +89,13 @@ footer {
   z-index: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-align:center;
 }
 
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/hero.jpg");
   /* TODO: MODULE_LAYOUT */
   /* 1. Set a specific height. */
   /* 2. Position and center the image to scale nicely on all screens. */
@@ -82,14 +105,11 @@ footer {
   background-size: cover;
   align-items: center;
   color: white;
-
 }
-
 
 .hero-subheading {
   font-size: 24px;
   font-weight: 100;
- 
 }
 .hero-input {
   display: inline;
@@ -99,7 +119,6 @@ footer {
   border-radius: 8px;
   border: none;
   position: center;
-
 }
 
 .nav-link {
@@ -130,7 +149,6 @@ footer {
 .adventure-detail-card {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
-
 }
 
 .adventure-card-image {
@@ -152,6 +170,4 @@ footer {
     width: 400px;
     position: fixed;
   }
-  
-
 }
